@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gabriel-lsp.github.io/noti-inclusivos/sitemap.xml
+Sitemap: https://crebeucayali.github.io/noti-inclusivos/sitemap.xml
