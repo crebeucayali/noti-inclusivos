@@ -1,0 +1,59 @@
+{
+  "actualizado": "2026-07-06T22:30:00+00:00",
+  "noticias": [
+    {
+      "titulo": "Mérida recibe el Premio Vivofácil 2026 por su compromiso con la inclusión",
+      "fuente": "Cadena SER",
+      "fecha": "2026-07-06",
+      "categoria": "Accesibilidad e inclusión comunitaria",
+      "resumen": "Reconocimiento a una ciudad por acciones vinculadas con inclusión, accesibilidad universal, igualdad de oportunidades y eliminación de barreras físicas, sensoriales y cognitivas.",
+      "url": "https://cadenaser.com/extremadura/2026/07/06/merida-recibe-el-premio-vivofacil-2026-por-su-compromiso-con-la-inclusion-ser-merida/",
+      "palabras": ["inclusión", "accesibilidad", "diseño universal"]
+    },
+    {
+      "titulo": "Personas con discapacidad de América Latina y el Caribe reclaman ser protagonistas del cambio",
+      "fuente": "El País - América Futura",
+      "fecha": "2026-06-10",
+      "categoria": "Derechos y participación",
+      "resumen": "Publicación sobre enfoque de derechos, participación, autonomía y cambio cultural en torno a las personas con discapacidad en América Latina y el Caribe.",
+      "url": "https://elpais.com/america-futura/2026-06-10/las-personas-con-discapacidad-de-america-latina-y-el-caribe-reclaman-ser-protagonistas-del-cambio.html",
+      "palabras": ["discapacidad", "derechos", "participación"]
+    },
+    {
+      "titulo": "Huesca Más Inclusiva cumple diez años como proyecto de referencia en inclusión",
+      "fuente": "Cadena SER",
+      "fecha": "2026-06-08",
+      "categoria": "Accesibilidad e inclusión comunitaria",
+      "resumen": "Proyecto de trabajo colaborativo en accesibilidad, empleo, cultura, educación y sensibilización, desarrollado mediante alianzas entre instituciones y comunidad.",
+      "url": "https://cadenaser.com/aragon/2026/06/08/huesca-mas-inclusiva-cumple-diez-anos-consolidado-como-un-proyecto-de-referencia-en-la-provincia-y-con-proyeccion-de-futuro-radio-huesca/",
+      "palabras": ["accesibilidad", "inclusión social", "educación"]
+    },
+    {
+      "titulo": "La Conferencia Iberoamericana de Educación acuerda una agenda común sobre IA y Formación Profesional",
+      "fuente": "El País",
+      "fecha": "2026-05-28",
+      "categoria": "Educación inclusiva y políticas públicas",
+      "resumen": "Acuerdo educativo iberoamericano sobre inteligencia artificial, formación profesional y continuidad educativa, vinculado a una educación inclusiva, equitativa y de calidad.",
+      "url": "https://elpais.com/espana/catalunya/2026-05-28/la-ministra-de-educacion-pide-en-barcelona-una-estrategia-conjunta-iberoamericana-para-los-desafios-en-ensenanza.html",
+      "palabras": ["educación inclusiva", "Iberoamérica", "políticas educativas"]
+    },
+    {
+      "titulo": "Dos docentes de Huesca son finalistas en un programa nacional por liderazgo e inclusión educativa",
+      "fuente": "Cadena SER",
+      "fecha": "2026-05-18",
+      "categoria": "Docencia e inclusión",
+      "resumen": "Programa que reconoce prácticas docentes vinculadas con liderazgo educativo, inclusión y buenas prácticas con impacto positivo en el sistema educativo.",
+      "url": "https://cadenaser.com/aragon/2026/05/18/beatriz-serrano-del-ceip-montecorona-sabinanigo-y-nathalie-clavero-del-ceip-pirineos-pyrenees-huesca-finalistas-de-docentes-referentes-impulsado-por-fundacion-ibercaja-radio-huesca/",
+      "palabras": ["docentes", "educación inclusiva", "buenas prácticas"]
+    },
+    {
+      "titulo": "Dénia inicia la construcción del nuevo centro de educación especial Raquel Payà",
+      "fuente": "Cadena SER",
+      "fecha": "2026-04-29",
+      "categoria": "Educación especial y accesibilidad",
+      "resumen": "Inicio de una infraestructura educativa adaptada y accesible para responder a necesidades de estudiantes, familias y profesionales de educación especial.",
+      "url": "https://cadenaser.com/comunitat-valenciana/2026/04/29/denia-coloca-la-primera-piedra-del-nuevo-raquel-paya-una-deuda-historica-con-la-educacion-especial-empieza-a-saldarse-radio-denia/",
+      "palabras": ["educación especial", "accesibilidad", "infraestructura educativa"]
+    }
+  ]
+}

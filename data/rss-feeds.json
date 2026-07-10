@@ -1,0 +1,17 @@
+[
+  {
+    "nombre": "MINEDU Noticias",
+    "categoria": "Educación inclusiva",
+    "url": "https://www.gob.pe/institucion/minedu/noticias.rss"
+  },
+  {
+    "nombre": "Gob.pe Noticias",
+    "categoria": "Noticias públicas",
+    "url": "https://www.gob.pe/noticias.rss"
+  },
+  {
+    "nombre": "UNICEF Perú",
+    "categoria": "Derechos y niñez",
+    "url": "https://www.unicef.org/peru/rss.xml"
+  }
+]

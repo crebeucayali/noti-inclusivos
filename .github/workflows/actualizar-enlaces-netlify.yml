@@ -1,0 +1,39 @@
+name: Actualizar enlaces a Netlify
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/actualizar-enlaces-netlify.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar-enlaces:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Reemplazar enlaces antiguos de Weebly
+        run: |
+          find . -type f \
+            \( -name "*.html" -o -name "*.css" -o -name "*.js" -o -name "*.md" -o -name "*.txt" -o -name "*.json" \) \
+            -not -path "./.git/*" \
+            -not -path "./.github/workflows/actualizar-enlaces-netlify.yml" \
+            -print0 | xargs -0 sed -i \
+            -e 's#https://crebeucayali.weebly.com/#https://crebe-ucayali.netlify.app/#g' \
+            -e 's#https://crebeucayali.weebly.com#https://crebe-ucayali.netlify.app/#g'
+
+      - name: Guardar cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet; then
+            git add .
+            git commit -m "Actualizar enlaces de Weebly a Netlify"
+            git push
+          else
+            echo "No quedan enlaces antiguos por actualizar."
+          fi
