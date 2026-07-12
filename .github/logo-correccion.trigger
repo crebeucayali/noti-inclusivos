@@ -1,0 +1,1 @@
+Ejecutar corrección de la ruta institucional del logo.
