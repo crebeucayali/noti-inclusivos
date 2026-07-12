@@ -1,4 +1,4 @@
-name: Corregir ruta del logo institucional
+name: Limpiar archivos temporales del logo
 
 on:
   push:
@@ -9,38 +9,17 @@ permissions:
   contents: write
 
 jobs:
-  corregir:
+  limpiar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: corrige-ruta-logo-institucional
           fetch-depth: 0
-      - name: Corregir referencias del logo
+      - name: Retirar archivos temporales
         run: |
-          python - <<'PY'
-          from pathlib import Path
-          antigua = "https://crebeucayali.github.io/banco-digital-accesible/logo-crebe.png"
-          nueva = "https://crebeucayali.github.io/accesos-complementarios/logo-crebe.webp"
-          modificados = []
-          for ruta in Path('.').rglob('*.html'):
-              if '.git' in ruta.parts: continue
-              texto = ruta.read_text(encoding='utf-8')
-              actualizado = texto.replace(antigua, nueva)
-              actualizado = actualizado.replace(f'type="image/png" href="{nueva}"', f'type="image/webp" href="{nueva}"')
-              actualizado = actualizado.replace(f"type='image/png' href='{nueva}'", f"type='image/webp' href='{nueva}'")
-              if actualizado != texto:
-                  ruta.write_text(actualizado, encoding='utf-8', newline='\n')
-                  modificados.append(str(ruta))
-          if not modificados: raise SystemExit('No se encontraron referencias que corregir')
-          print('\n'.join(modificados))
-          PY
-      - name: Validar y publicar
-        run: |
-          if grep -R --include='*.html' -n 'https://crebeucayali.github.io/banco-digital-accesible/logo-crebe.png' .; then exit 1; fi
-          git diff --check
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- '*.html'
-          git commit -m 'Corrige la ruta del logo institucional'
+          git rm .github/workflows/corregir-logo.yml .github/logo-correccion.trigger
+          git commit -m 'Retira archivos temporales de corrección del logo'
           git push origin HEAD:corrige-ruta-logo-institucional
