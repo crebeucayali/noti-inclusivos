@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Transición a la vida adulta</title>
+  <desc id="descripcion">Imagen institucional sobre una investigación en curso acerca de las experiencias de familias y docentes.</desc>
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07324a"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <pattern id="patron" width="92" height="92" patternUnits="userSpaceOnUse">
+      <path d="M0 24h28V0M64 0v28h28M92 68H64v24M28 92V64H0M28 28h36v36H28z" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="5"/>
+    </pattern>
+    <filter id="sombra" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#001b26" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" rx="34" fill="url(#fondo)"/>
+  <rect width="1200" height="750" rx="34" fill="url(#patron)"/>
+  <rect x="74" y="70" width="320" height="52" rx="26" fill="#8bcf86"/>
+  <text x="234" y="104" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#07324a">INVESTIGACIÓN EN CURSO</text>
+  <text x="74" y="220" font-family="Georgia, serif" font-size="70" font-weight="700" fill="#ffffff">Transición a la</text>
+  <text x="74" y="302" font-family="Georgia, serif" font-size="70" font-weight="700" fill="#ffffff">vida adulta</text>
+  <line x1="74" y1="348" x2="600" y2="348" stroke="#9fe4d9" stroke-width="4"/>
+  <text x="74" y="398" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#dff7f2">Experiencias de familias y docentes</text>
+  <path d="M720 620c32-90 54-178 84-256 31-79 80-145 194-214" fill="none" stroke="#dff2dc" stroke-width="84" stroke-linecap="round" opacity=".9"/>
+  <path d="M720 620c32-90 54-178 84-256 31-79 80-145 194-214" fill="none" stroke="#8bcf86" stroke-width="6" stroke-linecap="round" stroke-dasharray="14 18"/>
+  <g fill="#c9f7ee" opacity=".95">
+    <circle cx="926" cy="178" r="54"/><circle cx="1000" cy="326" r="54"/><circle cx="922" cy="475" r="54"/>
+  </g>
+  <g fill="none" stroke="#0f766e" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="926" cy="160" r="12"/><path d="M926 176v38m-23-20h46m-34 36 11-16 11 16"/>
+    <rect x="972" y="302" width="56" height="40" rx="6"/><path d="M988 302v-12h24v12m-40 20h56"/>
+    <circle cx="902" cy="454" r="9"/><circle cx="942" cy="454" r="9"/><path d="M884 490c5-17 17-26 36-26s31 9 36 26M896 490c4-11 12-17 26-17s22 6 26 17"/>
+  </g>
+  <g transform="translate(780 410)" fill="#0b4f4a" filter="url(#sombra)">
+    <circle cx="0" cy="0" r="24"/><path d="M-17 28h34l18 82h-22l-8-40-8 40h-22z"/>
+    <rect x="24" y="28" width="34" height="54" rx="8"/>
+  </g>
+  <g transform="translate(720 610)" fill="#083d4b" opacity=".92">
+    <circle cx="0" cy="0" r="32"/><rect x="-21" y="32" width="42" height="95" rx="18"/>
+    <circle cx="72" cy="7" r="27"/><rect x="53" y="34" width="38" height="82" rx="17"/>
+    <circle cx="138" cy="18" r="23"/><rect x="122" y="42" width="32" height="70" rx="15"/>
+    <circle cx="215" cy="7" r="28"/><rect x="195" y="35" width="40" height="84" rx="17"/>
+  </g>
+  <g transform="translate(74 568)">
+    <rect width="420" height="108" rx="22" fill="#ffffff" fill-opacity=".1" stroke="#ffffff" stroke-opacity=".28"/>
+    <image href="https://crebeucayali.github.io/banco-digital-accesible/logo-crebe.png" x="18" y="14" width="80" height="80" preserveAspectRatio="xMidYMid meet"/>
+    <text x="118" y="45" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ffffff">CREBE Ucayali</text>
+    <text x="118" y="76" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#dff7f2">Investigación e información</text>
+  </g>
+</svg>
