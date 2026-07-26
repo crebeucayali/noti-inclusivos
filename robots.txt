@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://crebeucayali.github.io/lectura-inclusiva/sitemap.xml
+Sitemap: https://crebeucayali.github.io/noti-inclusivos/sitemap.xml
