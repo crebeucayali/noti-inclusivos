@@ -8,3 +8,21 @@
 @media(max-width:650px){body{font-size:15.5px}.cabecera{padding:26px 18px 116px}.navegacion{align-items:flex-start;flex-direction:column}.marca-institucional{align-items:flex-start}.marca-logo-superior{width:52px;height:52px;border-radius:16px}.marca-texto-superior{padding-left:12px}.marca-nombre-institucional{font-size:.94rem}.marca-detalle-institucional{font-size:.82rem}.portada{margin-top:52px}.contenido-principal{margin-top:-58px}.introduccion{padding:22px}.tarjeta-horizontal{grid-template-columns:1fr}.tarjeta-visual,.tarjeta-visual.imagen img{min-height:150px}.tarjeta-contenido{padding:21px}.columna-lateral{grid-template-columns:1fr}}
 
 .nota-lateral-enlace{margin-top:12px}
+
+/* Escala tipográfica contenida para encabezados principales. */
+.portada h1{
+  font-size:clamp(2rem,3.5vw,3rem);
+  line-height:1.10;
+}
+.contenido-principal h2:not(.bloque-lateral h2){
+  font-size:clamp(1.5rem,2.3vw,1.875rem);
+  line-height:1.20;
+}
+@media (max-width:760px){
+  .portada h1{
+    font-size:clamp(2rem,9vw,2.25rem);
+  }
+  .contenido-principal h2:not(.bloque-lateral h2){
+    font-size:clamp(1.5rem,6vw,1.6875rem);
+  }
+}
