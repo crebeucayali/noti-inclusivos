@@ -2,22 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; frame-src 'none'; form-action 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Índice de artículos publicados en Lecturas Inclusivas del Ecosistema Virtual Accesible del CREBE Señor de los Milagros - Ucayali.">
   <meta name="author" content="CREBE Señor de los Milagros - Ucayali">
   <title>Artículos | Lecturas Inclusivas</title>
   <link rel="icon" type="image/webp" href="https://crebeucayali.github.io/accesos-complementarios/logo-crebe.webp">
-  <style>
-    :root{--azul:#07324a;--verde:#0f766e;--fondo:#faf9f6;--texto:#102a43;--suave:#486581;--borde:#d9e2ec}
-    *{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--texto);font-family:Arial,Helvetica,sans-serif;line-height:1.65}a{color:var(--verde)}
-    header{padding:30px 18px 100px;color:#fff;background:linear-gradient(135deg,#0b3550,#0f4f57 48%,#0f766e)}
-    .wrap{width:min(1050px,calc(100% - 36px));margin:auto}.nav{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.nav a{color:#fff;font-weight:800}
-    h1{margin:54px 0 14px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.4rem,5vw,3.8rem);font-weight:600}.subtitulo{max-width:760px;margin:0;color:rgba(255,255,255,.95);font-size:1.12rem}
-    main{margin-top:-52px}.panel{padding:28px;background:#fff;border:1px solid var(--borde);border-radius:24px;box-shadow:0 14px 34px rgba(16,42,67,.12)}
-    .tarjeta{display:grid;grid-template-columns:240px 1fr;overflow:hidden;border:1px solid var(--borde);border-radius:20px}.tarjeta img{width:100%;height:100%;min-height:210px;object-fit:cover}.contenido{padding:24px}.etiqueta{margin:0 0 8px;color:var(--verde);font-size:.82rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.contenido h2{margin:0 0 12px;color:var(--azul)}.contenido p{margin:0 0 16px;color:var(--suave)}.boton{display:inline-flex;padding:10px 18px;color:#fff;background:var(--azul);border-radius:999px;text-decoration:none;font-weight:900}
-    footer{margin-top:52px;padding:30px 18px;color:#fff;background:var(--azul)}
-    @media(max-width:700px){.tarjeta{grid-template-columns:1fr}.tarjeta img{min-height:180px}}
-  </style>
+  <link rel="stylesheet" href="estilos.css?v=1">
 </head>
 <body>
   <header>
@@ -27,10 +18,10 @@
   <main class="wrap">
     <section class="panel" aria-labelledby="titulo-listado">
       <h2 id="titulo-listado">Artículos publicados</h2>
-      <article class="tarjeta" style="margin-bottom:18px"><div class="contenido"><p class="etiqueta">Infancia y lectura · 17 de agosto de 2026</p><h2>Los cuentos ayudan a acercar a los niños a la inclusión y la discapacidad</h2><p>Historias para conversar sobre discapacidad, diferencias y participación en la infancia.</p><a class="boton" href="cuentos-inclusion-discapacidad/">Leer artículo</a></div></article>
-      <article class="tarjeta" style="margin-bottom:18px"><div class="contenido"><p class="etiqueta">Deporte e inclusión · 3 de agosto de 2026</p><h2>Aprender en el agua sin barreras</h2><p>Natación inclusiva y formación de instructores para acompañar diferentes necesidades de aprendizaje.</p><a class="boton" href="natacion-inclusiva-sin-barreras/">Leer artículo</a></div></article>
-      <article class="tarjeta" style="margin-bottom:18px"><div class="contenido"><p class="etiqueta">Salud y accesibilidad · 20 de julio de 2026</p><h2>Salud y emergencias: la inclusión sigue siendo desigual</h2><p>Barreras de acceso a la salud y continuidad de apoyos en situaciones de emergencia.</p><a class="boton" href="salud-emergencias-inclusion/">Leer artículo</a></div></article>
-      <article class="tarjeta" style="margin-bottom:18px"><div class="contenido"><p class="etiqueta">Neurodiversidad · 13 de julio de 2026</p><h2>Neurodiversidad: del reconocimiento a los apoyos</h2><p>El reconocimiento de las diferencias y la importancia de la accesibilidad y los apoyos.</p><a class="boton" href="neurodiversidad-del-reconocimiento-a-los-apoyos/">Leer artículo</a></div></article>
+      <article class="tarjeta tarjeta-separada"><div class="contenido"><p class="etiqueta">Infancia y lectura · 17 de agosto de 2026</p><h2>Los cuentos ayudan a acercar a los niños a la inclusión y la discapacidad</h2><p>Historias para conversar sobre discapacidad, diferencias y participación en la infancia.</p><a class="boton" href="cuentos-inclusion-discapacidad/">Leer artículo</a></div></article>
+      <article class="tarjeta tarjeta-separada"><div class="contenido"><p class="etiqueta">Deporte e inclusión · 3 de agosto de 2026</p><h2>Aprender en el agua sin barreras</h2><p>Natación inclusiva y formación de instructores para acompañar diferentes necesidades de aprendizaje.</p><a class="boton" href="natacion-inclusiva-sin-barreras/">Leer artículo</a></div></article>
+      <article class="tarjeta tarjeta-separada"><div class="contenido"><p class="etiqueta">Salud y accesibilidad · 20 de julio de 2026</p><h2>Salud y emergencias: la inclusión sigue siendo desigual</h2><p>Barreras de acceso a la salud y continuidad de apoyos en situaciones de emergencia.</p><a class="boton" href="salud-emergencias-inclusion/">Leer artículo</a></div></article>
+      <article class="tarjeta tarjeta-separada"><div class="contenido"><p class="etiqueta">Neurodiversidad · 13 de julio de 2026</p><h2>Neurodiversidad: del reconocimiento a los apoyos</h2><p>El reconocimiento de las diferencias y la importancia de la accesibilidad y los apoyos.</p><a class="boton" href="neurodiversidad-del-reconocimiento-a-los-apoyos/">Leer artículo</a></div></article>
 
       <article class="tarjeta">
         <img src="https://crebeucayali.github.io/noti-inclusivos/assets/img/sindrome-down-ciencia-bioetica.jpeg" alt="Portada del artículo sobre síndrome de Down, ciencia y bioética">
