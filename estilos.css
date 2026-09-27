@@ -26,3 +26,13 @@
     font-size:clamp(1.5rem,6vw,1.6875rem);
   }
 }
+
+/* Ajuste compartido de altura de la franja superior EVA */
+@media (min-width:701px){
+  .cabecera > .navegacion,
+  .cabecera .navegacion{
+    min-height:74px;
+    padding-top:6px;
+    padding-bottom:6px;
+  }
+}
