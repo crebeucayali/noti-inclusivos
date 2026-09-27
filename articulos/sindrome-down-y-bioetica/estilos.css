@@ -328,8 +328,9 @@ footer {
   background: var(--azul-900);
 }
 footer > div { max-width: var(--ancho); }
-footer p { margin: 0 0 10px; }
-footer a { color: var(--blanco); }
+footer p { margin: 0 0 10px; font-size: .875rem; }
+footer a { color: var(--blanco); font-size: .875rem; }
+footer strong { font-size: .9375rem; }
 
 @media (max-width: 720px) {
   body { font-size: 16px; }
