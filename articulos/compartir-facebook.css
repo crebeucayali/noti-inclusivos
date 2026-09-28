@@ -1,0 +1,66 @@
+/* Nivel 1 · Compartir contenidos EVA en Facebook */
+.compartir-social{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:32px;
+  padding:20px 0 4px;
+  border-top:1px solid var(--borde,#d8e2e7);
+}
+
+.compartir-social strong{
+  color:var(--azul-900,#102a43);
+  font-size:.95rem;
+}
+
+.compartir-facebook{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:10px 18px;
+  color:#fff;
+  background:#1877f2;
+  border:2px solid transparent;
+  border-radius:999px;
+  font-weight:800;
+  line-height:1.2;
+  text-decoration:none;
+}
+
+.compartir-facebook:hover,
+.compartir-facebook:focus-visible{
+  color:#fff;
+  background:#145dbf;
+}
+
+.compartir-facebook:focus-visible{
+  outline:3px solid currentColor;
+  outline-offset:3px;
+}
+
+body.alto-contraste .compartir-social{
+  border-color:#fff!important;
+}
+
+body.alto-contraste .compartir-social strong{
+  color:#fff!important;
+}
+
+body.alto-contraste .compartir-facebook{
+  color:#000!important;
+  background:#fff!important;
+  border-color:#fff!important;
+}
+
+@media(max-width:760px){
+  .compartir-social{
+    align-items:stretch;
+    flex-direction:column;
+  }
+
+  .compartir-facebook{
+    width:100%;
+  }
+}
