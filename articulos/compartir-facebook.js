@@ -1,38 +1,28 @@
 (() => {
+  const APP_ID = "1743067010248486";
   const enlaces = document.querySelectorAll("[data-compartir-facebook], .compartir-facebook");
   if (!enlaces.length) return;
 
-  const datos = () => {
+  const urlActual = () => {
     const actual = new URL(window.location.href);
     actual.hash = "";
-    const descripcion =
-      document.querySelector('meta[name="description"]')?.getAttribute("content")?.trim() ||
-      "Contenido del Ecosistema Virtual Accesible del CREBE Señor de los Milagros - Ucayali.";
-    return {
-      title: document.title,
-      text: descripcion,
-      url: actual.href,
-    };
+    return actual.href;
+  };
+
+  const crearDialogo = (url) => {
+    const parametros = new URLSearchParams({
+      app_id: APP_ID,
+      display: "popup",
+      href: url,
+      redirect_uri: url,
+    });
+
+    return "https://www.facebook.com/dialog/share?" + parametros.toString();
   };
 
   enlaces.forEach((enlace) => {
-    const info = datos();
-    const fallback =
-      "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(info.url);
-
-    enlace.href = fallback;
-
-    enlace.addEventListener("click", async (evento) => {
-      if (typeof navigator.share !== "function" || !window.isSecureContext) return;
-
-      evento.preventDefault();
-
-      try {
-        await navigator.share(datos());
-      } catch (error) {
-        if (error?.name === "AbortError") return;
-        window.location.assign(fallback);
-      }
-    });
+    enlace.href = crearDialogo(urlActual());
+    enlace.target = "_blank";
+    enlace.rel = "noopener noreferrer";
   });
 })();
