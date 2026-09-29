@@ -24,5 +24,13 @@
     enlace.href = crearDialogo(urlActual());
     enlace.target = "_blank";
     enlace.rel = "noopener noreferrer";
+    enlace.textContent = "Compartir";
+    enlace.setAttribute("aria-label", "Compartir este contenido");
+
+    const contenedor = enlace.closest(".compartir-eva");
+    const descripcion = contenedor?.querySelector("p");
+    if (descripcion?.textContent?.includes("Facebook")) {
+      descripcion.textContent = "Comparte este contenido.";
+    }
   });
 })();
