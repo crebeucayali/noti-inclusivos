@@ -155,7 +155,8 @@ footer > div {
   border: 1px solid rgba(255,255,255,.45);
   border-radius: 999px;
   background: rgba(255,255,255,.08);
-  font-weight: 800;
+  font-size: 0.9375rem;
+  font-weight: 600;
   text-decoration: none;
   text-shadow: 0 2px 4px rgba(0,0,0,.24);
 }
@@ -333,6 +334,7 @@ footer a { color: var(--blanco); font-size: .875rem; }
 footer strong { font-size: .9375rem; }
 
 @media (max-width: 720px) {
+  .enlaces-cabecera a { font-size: 0.875rem; }
   body { font-size: 16px; }
   .cabecera { padding: 26px 18px 116px; }
   .navegacion { align-items: flex-start; flex-direction: column; }
