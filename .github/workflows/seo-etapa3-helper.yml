@@ -1,4 +1,5 @@
 name: SEO Etapa 3 helper
+# activar helper temporal
 on:
   push:
     branches: [seo/fase-9-etapa-3-metadata]
