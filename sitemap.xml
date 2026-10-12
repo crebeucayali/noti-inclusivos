@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://crebeucayali.github.io/noti-inclusivos/</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://crebeucayali.github.io/noti-inclusivos/articulos/sindrome-down-y-bioetica/</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://crebeucayali.github.io/noti-inclusivos/</loc></url>
+  <url><loc>https://crebeucayali.github.io/noti-inclusivos/articulos/</loc></url>
+  <url><loc>https://crebeucayali.github.io/noti-inclusivos/articulos/cuentos-inclusion-discapacidad/</loc></url>
+  <url><loc>https://crebeucayali.github.io/noti-inclusivos/articulos/lanzamiento-eva/</loc></url>
+  <url><loc>https://crebeucayali.github.io/noti-inclusivos/articulos/natacion-inclusiva-sin-barreras/</loc></url>
+  <url><loc>https://crebeucayali.github.io/noti-inclusivos/articulos/neurodiversidad-del-reconocimiento-a-los-apoyos/</loc></url>
+  <url><loc>https://crebeucayali.github.io/noti-inclusivos/articulos/salud-emergencias-inclusion/</loc></url>
+  <url><loc>https://crebeucayali.github.io/noti-inclusivos/articulos/sindrome-down-y-bioetica/</loc></url>
+  <url><loc>https://crebeucayali.github.io/noti-inclusivos/articulos/transicion-vida-adulta/</loc></url>
 </urlset>
